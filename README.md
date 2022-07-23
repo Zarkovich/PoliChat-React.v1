@@ -16,31 +16,14 @@
 
 - [x] Selecionar o Chat
 
-exemplo de text area
+---
 
-```javascript
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Textarea autoresize</title>
-    <style>
-    textarea {
-        overflow: hidden;
-    }
-    </style>
-    <script>
-    function resizeTextarea(ev) {
-        this.style.height = '24px';
-        this.style.height = this.scrollHeight + 12 + 'px';
-    }
+## [Link do Site](https://polichat-gustavo-vieira.netlify.app/)
 
-    var te = document.querySelector('textarea');
-    te.addEventListener('input', resizeTextarea);
-    </script>
-</head>
-<body>
-    <textarea></textarea>
-</body>
-</html>
-```
+## Versão Desktop:
+
+![DesktopGif](/desktop.gif)
+
+## Vesão Mobile:
+
+![MobileGif](/mobile.gif)
