@@ -1,0 +1,146 @@
+@import "/src/custom.scss";
+
+.ChatWindowContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  width: 58%;
+  // width: 1286px;
+  height: 85vh;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ChatWindowContainer__TopPainel {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.ChatWindowContainer__TopPainel--dark {
+  background-color: $dark;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.ChatWindowContainer__TopPainel--ligth {
+  background-color: $light;
+  border: 1px solid rgba(144, 144, 144, 0.5);
+}
+//=================================================
+.ChatWindowContainer__TopPainel__Profile {
+  display: flex;
+  align-items: center;
+}
+
+.ChatWindowContainer__TopPainel__Profile__ProfileImage {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: coral;
+}
+
+.ChatWindowContainer__TopPainel__Profile__NameChat {
+  color: transparent;
+  font-size: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.ChatWindowContainer__TopPainel__User {
+  display: flex;
+  align-items: center;
+}
+
+.ChatWindowContainer__TopPainel__User__Image {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: plum;
+}
+
+.ChatWindowContainer__TopPainel__User__Options {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $link;
+  cursor: pointer;
+}
+
+.ChatWindowContainer__TopPainel__User__Options--dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: $link;
+}
+.ChatWindowContainer__TopPainel__User__Options:active
+  > .ChatWindowContainer__TopPainel__User__Options--dot {
+  background-color: rgb(90, 90, 90);
+}
+
+.ChatWindowContainer__Conversation {
+  width: 100%;
+  height: 75%;
+  overflow: auto;
+}
+
+.ChatWindowContainer__Conversation::-webkit-scrollbar {
+  width: 4px;
+}
+.ChatWindowContainer__Conversation::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.ChatWindowContainer__Conversation::-webkit-scrollbar-thumb {
+  background-color: $success;
+}
+
+.ChatWindowContainer__Write {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  background-color: $dark;
+  bottom: 0;
+  border-top: 1px solid rgba(238, 238, 238, 0.534);
+}
+
+#Messenge {
+  border-radius: 6px;
+  outline: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  width: 100%;
+  resize: none;
+}
+
+.ChatWindowContainer__Write__Messenge--dark {
+  color: $link;
+  background-color: $dark;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+}
+.ChatWindowContainer__Write__Messenge--ligth {
+  color: $dark;
+  background-color: $light;
+  border: 1px solid rgba(126, 126, 126, 0.65);
+}
+
+@media screen and (max-width: 960px) {
+  .ChatWindowContainer {
+    left: 8px;
+    top: 76px;
+    width: 97%;
+    height: 70vh;
+    position: absolute;
+  }
+}

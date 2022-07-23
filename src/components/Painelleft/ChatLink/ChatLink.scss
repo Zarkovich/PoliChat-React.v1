@@ -1,0 +1,49 @@
+@import "/src/custom.scss";
+
+.ChatLink {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding-left: 15px;
+  width: 95%;
+  height: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ChatLink__ProfileImg {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ChatLink__ProfileImg--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: coral;
+}
+
+.ChatLink__Texts {
+  flex: 3;
+}
+
+.ChatLink__P {
+  font-size: 16px;
+  margin: 0;
+}
+
+.ChatLink__DataIcon {
+  flex: 1;
+  display: flex;
+}
+.ChatLink__DataIcon > * {
+  margin-right: 5px;
+  font-size: 12px;
+}

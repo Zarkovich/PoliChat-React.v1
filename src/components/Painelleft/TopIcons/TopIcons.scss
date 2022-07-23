@@ -1,0 +1,44 @@
+@import "/src/custom.scss";
+
+.ContainerIcons {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ContainerIcons__Nav > * > * > * {
+  margin: 0 30px;
+}
+.ContainerIcons__Nav--ligth > * > * > * {
+  margin: 0 30px;
+}
+
+.ContainerIcons__Nav > * > .active {
+  border-bottom: 3px solid $success !important;
+}
+.ContainerIcons__Nav--ligth > * > .active {
+  border-bottom: 3px solid $success !important;
+  background-color: $backgroud-light !important;
+}
+
+.ContainerIcons__Nav > * > .active > * {
+  color: $success !important;
+}
+.ContainerIcons__Nav--ligth > * > .active > * {
+  color: $success !important;
+}
+
+@media screen and (max-width: 560px) {
+  .ContainerIcons {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .ContainerIcons__Nav > * > * > * {
+    margin: 0 15px;
+  }
+}

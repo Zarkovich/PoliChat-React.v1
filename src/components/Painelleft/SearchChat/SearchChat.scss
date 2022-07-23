@@ -1,0 +1,85 @@
+@import "/src/custom.scss";
+
+.Container__Search {
+  display: flex;
+  height: 60px;
+  background-color: $dark;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Container__Search--light {
+  display: flex;
+  height: 60px;
+  background-color: $light;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Search__Box {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  flex: 7;
+  height: 50px;
+}
+
+.Search__Box__Border {
+  border: 0.5px solid rgba(238, 238, 238, 0.5);
+  background-color: $backgroud-dark;
+}
+.Search__Box__Border--ligth {
+  border: 0.5px solid rgba(116, 116, 116, 0.5);
+  background-color: $backgroud-light;
+}
+
+#Seach__Name {
+  height: 80%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.Seach__Name {
+  color: $link;
+}
+.Seach__Name--ligth {
+  color: $dark;
+}
+
+#Seach__Name:focus {
+  outline: none;
+}
+
+.Search__Icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.Container-Search__IconContainer--Sizing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  flex: 1;
+  height: 70%;
+  background-color: $backgroud-dark;
+  border: 0.5px solid rgba(255, 255, 255, 0.418);
+  margin: 0 5px;
+  cursor: pointer;
+}
+.Container-Search__IconContainer--Sizing--light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  flex: 1;
+  height: 70%;
+  background-color: $backgroud-light;
+  border: 0.5px solid rgba(120, 120, 120, 0.418);
+  margin: 0 5px;
+  cursor: pointer;
+}

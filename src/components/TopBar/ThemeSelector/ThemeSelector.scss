@@ -1,0 +1,12 @@
+@import "/src/custom.scss";
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.Switch__Theme__Icons {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}

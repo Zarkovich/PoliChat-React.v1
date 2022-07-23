@@ -1,0 +1,21 @@
+.Boas-Vindas {
+  font-size: 72px;
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  position: absolute;
+  // top: 500px;
+  // left: 700px;
+  top: 30%;
+  left: 33%;
+}
+
+@media screen and (max-width: 960px) {
+  .Boas-Vindas {
+    width: 75%;
+    font-size: 70px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+  }
+}

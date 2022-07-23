@@ -1,0 +1,80 @@
+@import "/src/GlobalColor.scss";
+
+.navBar__container {
+  width: 100%;
+  // max-width: 1920px;
+  border-bottom: 1px solid #eee;
+  z-index: 99;
+  background-color: $dark;
+}
+.navBar__container--ligth {
+  width: 100%;
+  // width: 1920px;
+  border-bottom: 1px solid #444;
+  background-color: $light;
+  z-index: 99;
+}
+.me-auto {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.me-auto > * {
+  z-index: 99;
+}
+
+#PoliLogo {
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.Container__NavBar__PolichatName {
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .Container__NavBar__PolichatName {
+    margin-right: 0;
+  }
+  .navBar__container {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    z-index: 99;
+    background-color: $dark;
+  }
+
+  .navBar__container--ligth {
+    width: 100%;
+    border-bottom: 1px solid #444;
+    background-color: $light;
+    z-index: 99;
+  }
+
+  .me-auto > * {
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .navBar__container {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    z-index: 99;
+    background-color: $dark;
+  }
+  .navBar__container--ligth {
+    width: 100%;
+    border-bottom: 1px solid #444;
+    background-color: $light;
+    z-index: 99;
+  }
+
+  .me-auto > * {
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 99;
+  }
+}

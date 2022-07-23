@@ -1,0 +1,53 @@
+@import "/src/custom.scss";
+
+//DARK MODE
+.darkMode__Painel {
+  background-color: $dark;
+  color: $link;
+  border: 1px solid #757575;
+}
+.darkMode__Painel__BorderTop {
+  background-color: $dark;
+  color: $link;
+  border-top: 1px solid #757575;
+}
+.darkMode__Icon {
+  color: $link;
+}
+
+.darkMode__Background {
+  background-color: $backgroud-dark;
+  color: $link;
+}
+
+.dark__Image {
+  background-image: url("../src/img/backgroundDark.png");
+  background-size: contain;
+}
+
+//LIGTH MODE
+.ligthMode__Painel {
+  background-color: $light;
+  color: $backgroud-dark;
+  border: 1px solid #bababa;
+}
+
+.ligthMode__Painel__BorderTop {
+  background-color: $light;
+  color: $backgroud-dark;
+  border-top: 1px solid #bababa;
+}
+
+.ligthMode__Icon {
+  color: $backgroud-dark;
+}
+
+.ligthMode__Background {
+  background-color: $backgroud-light;
+  color: $backgroud-dark;
+}
+
+.ligth__Image {
+  background-image: url("../src/img/backgroundLight.png");
+  background-size: contain;
+}

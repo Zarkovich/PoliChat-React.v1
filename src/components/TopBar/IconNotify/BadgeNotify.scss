@@ -1,0 +1,9 @@
+@import "/src/custom.scss";
+
+.notify__style {
+  font-size: 12px;
+}
+
+.notify__style--alert {
+  color: $secondary;
+}

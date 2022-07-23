@@ -1,0 +1,18 @@
+@import "/src/GlobalColor.scss";
+
+.Container__App {
+  position: relative;
+  // width: 1920px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .Container__App {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+  }
+}

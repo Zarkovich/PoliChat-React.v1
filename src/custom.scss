@@ -1,0 +1,15 @@
+$backgroud-dark: #2f384c;
+$backgroud-light: #f5f6fa;
+//Variavel padrão
+// $body-bg: $backgroud-dark;
+$dark: #23293a;
+$primary: $backgroud-dark;
+$secondary: #ff647b;
+$warning: #fdd163;
+$success: #269ba4;
+$link: #cccecc;
+$light: #ffffff;
+$pills: #269ba4;
+//importar bootstrap styles
+
+@import "~bootstrap/scss/bootstrap.scss";

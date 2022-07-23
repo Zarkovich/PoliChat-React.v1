@@ -1,0 +1,46 @@
+.ChatBalonSend {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.ChatBalonSend__ProfileImage {
+  margin: 0 5px;
+  padding: 3px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+.ChatBalonSend__ProfileImage--Image {
+  padding: 8px;
+  font-size: 22px;
+  border-radius: 50%;
+  background-color: plum;
+}
+
+.ChatBalonSend__Inicial {
+  top: 0;
+  right: -20px;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid #006069;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid transparent;
+  transform: rotate(0deg);
+}
+
+.ChatBalonSend__Text {
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 20px;
+  position: relative;
+  padding: 10px;
+  background-color: #006069;
+  color: white;
+  border-radius: 10px;
+  z-index: 10;
+}
