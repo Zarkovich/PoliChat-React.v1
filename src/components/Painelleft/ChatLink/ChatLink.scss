@@ -9,6 +9,11 @@
   height: 90px;
   border-radius: 5px;
   cursor: pointer;
+  transition: ease 0.4s;
+
+  &:hover {
+    transform: translateX(10px);
+  }
 }
 
 .ChatLink__ProfileImg {

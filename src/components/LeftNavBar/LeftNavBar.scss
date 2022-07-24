@@ -23,22 +23,34 @@
 .flex > * {
   font-size: 32px;
   margin: 10px 0;
+  transition: ease 0.2s;
+
+  &:hover {
+    background-color: $success;
+  }
 }
 
 .flex--ligth > * {
   font-size: 32px;
   margin: 10px 0;
+  transition: ease 0.2s;
+
+  &:hover {
+    background-color: $success;
+  }
 }
 
 .flex.flex-pills > .active {
   border-left: 5px solid $success;
   padding: 8px 14px 8px 11px;
   background-color: $backgroud-dark;
+  transition: ease 0.4s;
 }
 .flex--ligth.flex--ligth-pills > .active {
   background-color: $link;
   padding: 8px 14px 8px 11px;
   border-left: 5px solid $success;
+  transition: ease 0.4s;
 }
 
 @media screen and (max-width: 960px) {

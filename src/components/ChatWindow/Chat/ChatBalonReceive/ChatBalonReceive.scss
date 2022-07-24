@@ -29,6 +29,12 @@
   border-right: 15px solid transparent;
   border-bottom: 30px solid transparent;
   transform: rotate(90deg);
+
+  transition: ease 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .ChatBalonReceiveContainer__Text {
@@ -41,4 +47,10 @@
   color: white;
   border-radius: 10px;
   z-index: 10;
+
+  transition: ease 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
