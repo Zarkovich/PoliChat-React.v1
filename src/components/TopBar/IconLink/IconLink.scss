@@ -9,7 +9,18 @@
 #Container__Icon--Image {
   font-size: 32px;
   cursor: pointer;
-}
-#Container__Icon--Image:active {
-  color: $success;
+
+  transition: ease 0.2s;
+
+  &:hover {
+    color: $success;
+  }
+
+  &:active {
+    color: $success;
+  }
+
+  &:focus {
+    color: $success;
+  }
 }

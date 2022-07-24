@@ -28,6 +28,15 @@
   margin: 0 10px;
   font-size: 20px;
   cursor: pointer;
+  transition: ease 0.2s;
+
+  &:hover {
+    color: $success;
+  }
+
+  &:focus {
+    color: $success;
+  }
 }
 .TextUtilitesContainer__Left__Icon--dark {
   color: $link;
@@ -45,6 +54,15 @@
   margin: 0 20px;
   font-size: 20px;
   cursor: pointer;
+  transition: ease 0.2s;
+
+  &:hover {
+    color: $success;
+  }
+
+  &:focus {
+    color: $success;
+  }
 }
 .TextUtilitesContainer__Rigth__Icon--dark {
   color: $link;
