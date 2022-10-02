@@ -1,8 +1,9 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BsPerson } from "react-icons/bs";
 import "../ChatLink/ChatLink.scss";
 import { ThemeContext } from "../../../contexts/ThemeContext";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import { useEffect } from "react";
 
 const ChatLink = ({
   nome,
@@ -11,29 +12,22 @@ const ChatLink = ({
   DataMenssege,
   ImageChat,
   Estado,
+  setSelect,
+  idx
 }) => {
   const { theme } = useContext(ThemeContext);
 
   let navigation = useNavigate();
   const [isActive, setIsActive] = useState(Estado);
 
-  const params = useParams();
-
-  useEffect(() => {
-    const handleEstado = (value) => {
-      setIsActive(value);
-    };
-
-    return () => {
-      if (params.pessoa === nome) return handleEstado(true);
-
-      return handleEstado(false);
-    };
-  }, [params, nome]);
-
   const handleClickChatLink = () => {
+    setSelect(idx);
     navigation(`/chat/${nome}`);
   };
+
+  useEffect(()=>{
+    setIsActive(Estado)
+  },[Estado])
 
   return (
     <div

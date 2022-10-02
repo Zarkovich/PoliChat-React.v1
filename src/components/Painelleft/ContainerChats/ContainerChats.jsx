@@ -3,16 +3,18 @@ import ChatLink from "../ChatLink/ChatLink";
 import "../ContainerChats/ContainerChats.scss";
 import { ThemeContext } from "../../../contexts/ThemeContext";
 import { useContext } from "react";
+import { useState } from "react";
 
 const ContainerChats = () => {
   const { theme } = useContext(ThemeContext);
+  const [selectChat, setSelectChat] = useState(0);
+
   const chats = [
     {
       nome: "Gustavo Vieira",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
 
     {
@@ -20,56 +22,48 @@ const ContainerChats = () => {
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Fauduso Baego",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Difus Ciosr",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Coelu Bupogoy",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Suhao Raope",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Usmeo Flete",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Unbli Laeneos",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
     {
       nome: "Kuovi Xomor",
       LastMensage: "oi",
       LocalAtendimento: "Suporte CS 18",
       DataMenssege: "18/05/2022",
-      Estado: false,
     },
   ];
 
@@ -81,14 +75,17 @@ const ContainerChats = () => {
           : "ligthMode__Painel__BorderTop"
       }`}
     >
-      {chats.map((chat) => (
+      {chats.map((chat, idx) => (
         <ChatLink
+          key={idx}
           nome={chat.nome}
           LastMensage={chat.LastMensage}
           LocalAtendimento={chat.LocalAtendimento}
           DataMenssege={chat.DataMenssege}
-          Estado={chat.Estado}
+          Estado={idx === selectChat}
           ImageChat={<BsWhatsapp />}
+          setSelect={setSelectChat}
+          idx={idx}
         />
       ))}
     </div>
